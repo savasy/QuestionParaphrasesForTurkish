@@ -1,4 +1,4 @@
-# Question Paraphrases For Turkish Language
+# Question Paraphrases Dataset For Turkish Language
 This data set contains 1377 question paraphrases for Turkish Languages. 
 The original questions are taken from Istanbul Bilgi Universitiy Frequently Asking Questions resource 
 https://www.bilgi.edu.tr/tr/yasam/ogrenci/sss/. Later,we manually add two additional truly semantically equivalent additional questions. These quesitons pairs are considered postivie example of the quesiton paraphrasing.
