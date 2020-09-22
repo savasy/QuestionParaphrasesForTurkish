@@ -1,9 +1,10 @@
 # Question Paraphrases Dataset For Turkish Language
-This data set contains 1377 question paraphrases for Turkish Languages. 
+This data set contains 1377 positive question paraphrases for Turkish Languages and 2187 negative examples. 
 The original questions are taken from Istanbul Bilgi Universitiy Frequently Asking Questions resource 
-https://www.bilgi.edu.tr/tr/yasam/ogrenci/sss/. Later,we manually added two additional truly semantically equivalent additional questions. These quesitons pairs are considered postivie example of the quesiton paraphrasing.  2187 
+https://www.bilgi.edu.tr/tr/yasam/ogrenci/sss/. Later,we manually added two additional truly semantically equivalent additional questions. These quesitons pairs are considered postivie example of the quesiton paraphrasing. 
 
-We also supplemented the dataset with 2187 negative examples labeled as 0. The source of negative examples are be pairs of "related questions" which, although pertaining to similar topics, are not truly semantically equivalent. It would be very much like Quora Question Pairs
+## Negative Sampling:
+We also supplemented 2187 negative examples labeled as 0. The source of negative examples are be pairs of "related questions" which, although pertaining to similar topics, are not truly semantically equivalent. It would be very much like Quora Question Pairs
 https://www.quora.com/q/quoradata/First-Quora-Dataset-Release-Question-Pairs
 
 
