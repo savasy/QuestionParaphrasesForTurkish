@@ -9,7 +9,26 @@ https://www.quora.com/q/quoradata/First-Quora-Dataset-Release-Question-Pairs
 
 
 ## Paraphrasing Detection
-To do classify wheter two questions are duplicate, we can train a simple classification algorithm.
-We plan to implement a ML-based paraphrase question detection model for Turkish language. It would be very helpfull especially for ChatBot framework in Turkish Language.
+To do classify wheter two questions are duplicate, we trained a simple classification algorithm based on BERT. It would be very helpfull especially for ChatBot framework in Turkish Language.
 
+Following code shows how to run the detection model 
+
+
+```
+from transformers import *
+import torch
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+tokenizer = AutoTokenizer.from_pretrained("savasy/TurkQP")
+model = AutoModelForSequenceClassification.from_pretrained("savasy/TurkQP")
+
+
+s0="Bugün yağmur yağacak mı ?"
+s1="Yağmur yağabilir mi bugün ?"
+inputs= tokenizer(s0, s1, add_special_tokens=True, return_tensors='pt')
+output= pytorch_model(inputs['input_ids'], token_type_ids=inputs['token_type_ids'])[0]
+pred = output.argmax().item()
+
+pred==1
+
+```
 
